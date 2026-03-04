@@ -240,7 +240,7 @@ GameObject:
   m_Component:
   - component: {fileID: 222463884}
   m_Layer: 0
-  m_Name: PlayerPos
+  m_Name: CameraPos
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
