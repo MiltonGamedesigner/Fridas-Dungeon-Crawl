@@ -1,14 +1,19 @@
+using System;
 using UnityEngine;
 
-
-[CreateAssetMenu(fileName = "New Enemy", menuName = "Enemy")]
-public class Unit : ScriptableObject
+public abstract class Unit : MonoBehaviour
 {
     public string EnemyName;
 
     public int damage;
     public int mana;
-    public int speed; 
+    public int speed;
     public int maxHP;
     public int currentHP;
+
+    public virtual int attack()
+        {
+            return damage;
+        }
+    public abstract void special();
 }
