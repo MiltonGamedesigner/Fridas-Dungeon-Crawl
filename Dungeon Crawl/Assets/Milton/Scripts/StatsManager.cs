@@ -5,12 +5,12 @@ public class StatsManager : MonoBehaviour
     public static StatsManager instance;
 
     [Header("Player Stats")]
-    public int damage;
-    public int intelligence;
-    public int speed;
+    public int playerDamage;
+    public int playerMana;
+    public int playerSpeed;
 
-    public int maxHealth;
-    public int currentHealth;
+    public int playerMaxHP;
+    public int playerCurrentHP;
 
 
        private void Awake()
