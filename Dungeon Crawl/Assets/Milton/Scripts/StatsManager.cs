@@ -6,7 +6,7 @@ public class StatsManager : MonoBehaviour
 
     [Header("Player Stats")]
     public int playerDamage;
-    public int playerMana;
+    public int playerInt;
     public int playerSpeed;
 
     public int playerMaxHP;
