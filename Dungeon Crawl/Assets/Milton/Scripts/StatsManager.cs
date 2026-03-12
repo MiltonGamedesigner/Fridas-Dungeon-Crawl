@@ -6,11 +6,11 @@ public class StatsManager : MonoBehaviour
 
     [Header("Player Stats")]
     public int playerDamage;
-    public int PLayerInt;
+    public int playerMana;
     public int playerSpeed;
 
-    public int playerMaxHealth;
-    public int playerCurrentHealth;
+    public int playerMaxHP;
+    public int playerCurrentHP;
 
 
        private void Awake()
