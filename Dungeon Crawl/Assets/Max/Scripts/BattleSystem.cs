@@ -1,21 +1,37 @@
+using JetBrains.Annotations;
+using System;
+using System.Collections.Generic;
 using UnityEngine;
 
-public enum BattleState { START, PLAYERTURN, ENEMYTURN, WON, LOST }
+public enum BattleState { Inactive, Start, PlayerTurn, EnemyTurn, Won, Lost }
 public class BattleSystem : MonoBehaviour
 {
-
     public BattleState state;
+
+    public Unit enemyEncounter;
+
+    public List<Unit> enemies = new List<Unit>();
+
 
     void Start()
     {
-        state = BattleState.START;
+        state = BattleState.Start;
+        
+        enemies.Add(new Goblin());
+        enemies.Add(new Goblin());
+        enemies.Add(new Goblin());
+        enemies.Add(new Goblin());
+
         SetupBattle();
     }
 
     void SetupBattle()
     {
         Debug.Log("Battle Start");
-        state = BattleState.PLAYERTURN;
+
+        enemyEncounter = enemies[UnityEngine.Random.Range(0, enemies.Count)];
+
+        state = BattleState.PlayerTurn;
         PlayerTurn();
     }
 

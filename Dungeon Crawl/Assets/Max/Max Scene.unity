@@ -1241,6 +1241,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: '::'
   state: 0
+  enemyEncounter: {fileID: 0}
+  enemies: []
 --- !u!4 &1492379955
 Transform:
   m_ObjectHideFlags: 0
